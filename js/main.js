@@ -2,13 +2,12 @@
 function getName() {
     var nameField = document.getElementById('nameField').value;
     var result = document.getElementById('result');
-    
-       
+           
     if (nameField.length < 2) {
         result.textContent = 'Name must contain at least 2 characters';
         //alert('Username must contain at least 2 characters');
     } else {
-        result.textContent = 'Gender of name ' + nameField +' is';
+        result.textContent = 'Gender of name ' + nameField +' is:';
         //alert(nameField);
     }
     //AJAX - Server Response, 4: request finished and response is ready, 200: "OK"
