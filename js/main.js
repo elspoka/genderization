@@ -5,10 +5,11 @@ function getName() {
            
     if (nameField.length < 2) {
         result.textContent = 'Name must contain at least 2 characters';
-        //alert('Username must contain at least 2 characters');
+		return;
+        //alert('name must contain at least 2 characters');
     } else {
         result.textContent = 'Gender of name ' + nameField +' is:';
-        //alert(nameField);
+		//alert(nameField);
     }
     //AJAX - Server Response, 4: request finished and response is ready, 200: "OK"
       var xmlhttp = new XMLHttpRequest();
@@ -18,10 +19,10 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("gender").innerHTML = myObj.gender;
     }
 };
-xmlhttp.open("GET", "https://api.genderize.io/?name=" + nameField, true);
+xmlhttp.open("GET", "https://api.genderize.io/?name=" + nameField);
 xmlhttp.send();  
     
 }
 // use an eventlistener for the event
 var subButton = document.getElementById('subButton');
-subButton.addEventListener('click', getName, false);
+subButton.addEventListener('click', getName);
