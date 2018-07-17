@@ -19,7 +19,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("gender").innerHTML = myObj.gender;
     }
 };
-xmlhttp.open("GET", "https://api.genderize.io/?name=" + nameField);
+xmlhttp.open("GET", "https://api.genderize.io/?name=" + nameField "&key=wcTahpdrKqWnbFeReb");
 xmlhttp.send();  
     
 }
