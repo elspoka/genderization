@@ -5,7 +5,7 @@ function getName() {
            
     if (nameField.length < 2) {
         result.textContent = 'Name must contain at least 2 characters';
-		//return;
+		return;
         //alert('name must contain at least 2 characters');
     } else {
         result.textContent = 'Gender of name ' + nameField +' is:';
@@ -19,7 +19,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("gender").innerHTML = myObj.gender;
     }
 };
-xmlhttp.open("GET", "https://gender-api.com/get?name=" + nameField + "&key=wcTahpdrKqWnbFeReb");
+xmlhttp.open("GET", "https://gender-api.com/get?name=" + nameField "&key=wcTahpdrKqWnbFeReb");
 xmlhttp.send();  
     
 }
