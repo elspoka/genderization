@@ -27,7 +27,7 @@ xmlhttp.send();
 const subButton = document.getElementById('subButton');
 subButton.addEventListener('click', getName);
 const nameInput = document.getElementById('nameField');
-nameInput.addEventListener("keypress", function(event) {
+nameInput.addEventListener("keyup", function(event) {
   // Cancel the default action, if needed
   event.preventDefault();
   // Number 13 is the "Enter" key on the keyboard
