@@ -26,10 +26,10 @@ xmlhttp.send();
 // use an eventlistener for the event
 const subButton = document.getElementById('subButton');
 subButton.addEventListener('click', getName);
-const nameField = document.getElementById('nameField');
-nameField.addEventListener("keypress", function(event) {
+const nameField2 = document.getElementById('nameField');
+nameField2.addEventListener("keypress", function(event) {
   // Cancel the default action, if needed
-  event.preventDefault();
+  //event.preventDefault();
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Trigger the button element with a click
