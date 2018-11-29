@@ -26,7 +26,7 @@ xmlhttp.send();
 // use an eventlistener for the event
 const subButton = document.getElementById('subButton');
 subButton.addEventListener('click', getName);
-const nameField = document.getElementById('nameField').value;
+const nameField = document.getElementById('nameField');
 nameField.addEventListener("keypress", function(event) {
   // Cancel the default action, if needed
   event.preventDefault();
